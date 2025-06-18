@@ -15,7 +15,7 @@ function App() {
   .then(function(data){
     setTodos(data.todos);
   })
-  }, []);
+  }, todos);
   return (
     <div>
       <CreateTodo setTodos={setTodos} />
